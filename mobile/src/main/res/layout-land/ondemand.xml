@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600dp"
+    android:layout_height="280dp"
+    android:orientation="vertical"
+    tools:context=".ui.activities.MainActivity"
+    android:background="@drawable/background3">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video On-Demand"
+        android:id="@+id/textCategory"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="35dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="40dp">
+
+            <com.selecttvapp.ui.views.DynamicImageView
+                android:layout_width="240dip"
+                android:layout_height="160dip"
+                android:id="@+id/imageShowThumbnail"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView2"
+                android:src="@drawable/shortwall"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="40dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="left|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You have requested to watch"
+                    android:id="@+id/textView2"
+                    android:layout_below="@+id/textCategory"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="30dp"
+                    android:text="VideoTitle"
+                    android:id="@+id/textVideoTitle"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imageShowThumbnail"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="#ff419eff"
+                    android:maxLines="1" />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:text="Watch Now!"
+                    android:id="@+id/butWatch"
+                    android:background="@drawable/buttonback"
+                    android:textColor="#ff419eff"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp" />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:text="Cancel"
+                    android:id="@+id/butCancel"
+                    android:background="@drawable/buttonback"
+                    android:textColor="#ff419eff"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

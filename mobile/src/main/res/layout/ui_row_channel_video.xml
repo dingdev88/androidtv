@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:background="@color/black"
+    android:padding="@dimen/padding_normal">
+
+    <LinearLayout
+        android:id="@+id/ui_row_video_now_text_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large">
+        <com.selecttvapp.ui.views.DynamicImageView
+            android:id="@+id/ui_row_video_now_btn_playing"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+
+            android:minWidth="100dp"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/ui_row_video_now_txt_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text=""
+            android:textColor="@color/app_color_blue"
+            android:textSize="@dimen/font_very_large"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/ui_row_video_now_text_holder_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ui_row_video_now_txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="7:22 AM 2015"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+    <!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="@color/black"-->
+    <!--android:layout_height="42dp"-->
+    <!--android:layout_marginBottom="2dp"-->
+    <!--android:layout_marginTop="2dp">-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="115dp"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textNowPlaying"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:textColor="#ff00ff40"-->
+    <!--android:text="Arslan Anwar"-->
+    <!--android:textSize="17dip"/>-->
+    <!--</FrameLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="10dip"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textNowTitle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:maxLines="1"-->
+    <!--android:text="Wao"-->
+    <!--android:textColor="#ff00ff40"-->
+    <!--android:textSize="17dip"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textNowTime"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:maxLines="1"-->
+    <!--android:text="It's working"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="12dip"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="0">-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/btnFullScreen"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_gravity="right|center_vertical"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:background="@drawable/icon_fullscreen"-->
+    <!--android:focusableInTouchMode="false"/>-->
+    <!--</FrameLayout>-->
+    <!--</LinearLayout>-->

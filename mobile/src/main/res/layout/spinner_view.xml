@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:text="Arslan Anwar"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+</FrameLayout>

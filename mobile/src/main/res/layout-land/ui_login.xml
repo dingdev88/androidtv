@@ -1,0 +1,151 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:paddingLeft="@dimen/padding_large"
+    android:paddingRight="@dimen/padding_large">
+
+    <ImageView
+        android:id="@+id/videoView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/top_logo1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoView"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:focusable="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/labelLoginInto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign In To Your Account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_large_extra" />
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_large"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:background="@color/transparent"
+            android:nextFocusDown="@+id/editPassword"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_dark_gray"
+            android:textSize="@dimen/font_very_large" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_large"
+            android:cursorVisible="true"
+            android:hint="Password"
+            android:focusable="true"
+            android:background="@color/transparent"
+            android:nextFocusUp="@+id/editUsername"
+            android:nextFocusDown="@+id/btnLogin"
+            android:inputType="textEmailAddress"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_dark_gray"
+            android:textSize="@dimen/font_very_large" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_extra_large"
+            android:gravity="center"
+            android:minWidth="160dp"
+            android:focusable="true"
+            android:paddingLeft="@dimen/padding_large_double"
+            android:background="@drawable/admin_btn_selector_solid"
+            android:backgroundTint="#1a83c6"
+            android:nextFocusUp="@+id/editPassword"
+            android:nextFocusDown="@+id/btnForgetPassword"
+            android:paddingRight="@dimen/padding_large_double"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white_and_gery"
+            android:textSize="@dimen/font_extra_large" />
+        <!--android:background="@drawable/ripple"-->
+        <TextView
+            android:id="@+id/btnForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:padding="@dimen/margin_normal"
+            android:background="@drawable/admin_btn_selector"
+            android:nextFocusUp="@+id/btnLogin"
+            android:nextFocusRight="@+id/btnNeedHelp"
+            android:text="Forgot Password?"
+            android:textColor="#FF2121"
+            android:textSize="@dimen/font_default"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnNeedHelp"
+        android:layout_marginBottom="@dimen/margin_max_x_large1"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="Create your Account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_extra_large"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/btnNeedHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/help_icon"
+        android:drawablePadding="5dp"
+        android:paddingBottom="20dp"
+        android:focusable="true"
+        android:background="@drawable/admin_btn_selector"
+        android:nextFocusUp="@+id/btnForgetPassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="8dp"
+        android:layout_marginBottom="15dp"
+        android:text="Need Help?"
+        android:textColor="@color/need_help_text_color"
+        android:textStyle="bold" />
+</RelativeLayout>

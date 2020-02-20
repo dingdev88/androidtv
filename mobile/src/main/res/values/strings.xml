@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Arvig</string>
+    <string name="crash_toast_text">Arvig</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_app_manager">App Manager</string>
+    <string name="action_Fast_download">Fast Download</string>
+
+    <string name="PARENT">parentDATA</string>
+    <string name="CHILD">childDATA</string>
+
+
+    <string name="play_video">Play video</string>
+    <string name="play_playlist">Play playlist</string>
+    <string name="play_video_list">Play video list</string>
+    <string name="start_index">Start index</string>
+    <string name="start_time">Start time (sec)</string>
+    <string name="autoplay">Autoplay</string>
+    <string name="lightbox_mode">Lightbox mode</string>
+    <string name="error_thumbnail_view">There was an error initializing the YouTubeThumbnailView (%1$s)</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <string-array name="spinner_category">
+        <item>Music</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="spinner_channel">
+        <item>Channel1</item>
+        <item>Channel2</item>
+    </string-array>
+    <string name="title_activity_movie_list">MovieListActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_video_trailor">@string/app_name</string>
+    <string name="title_activity_promo">@string/app_name</string>
+    <string name="title_activity_splash">@string/app_name</string>
+    <string name="facebook_app_id">940251606016079</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2477673314122306/2235248598</string>
+    <string name="banner_ad_unit_id_new">ca-app-pub-2477673314122306/2377815792</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="text_install">Download</string>
+    <string name="text_uninstall">Un Install</string>
+    <string name="text_got_to_app">Launch</string>
+    <string name="installed">INSTALLED</string>
+    <string name="not_installed">NOT INSTALLED</string>
+
+    <string name="interest_dialog_movie_text">What kind of Movies do you like?</string>
+    <string name="interest_dialog_channel_text">Pick out your Home Channels</string>
+    <string name="interest_dialog_network_text">What are your favorite TV Networks?</string>
+    <string name="interest_dialog_video_library_text">Add some Free Video Libraries</string>
+    <string name="interest_dialog_desc">This will help us personalize your Homepage and My Interest bar. You can change them at anytime.</string>
+    <string name="interest_dialog_skip_text">Skip this for now</string>
+    <string name="interest_channel_slug">api_channel</string>
+
+    <string name="basic_title">BASIC INFO</string>
+    <string name="account_first_name">First Name</string>
+    <string name="account_last_name">Last Name</string>
+    <string name="account_email">Email</string>
+    <string name="account_zip">Zip/Postal Code</string>
+
+    <string name="option_title">OPTIONAL</string>
+    <string name="account_i_am">I AM</string>
+    <string name="account_birth_date">Birth Date</string>
+    <string name="account_addrs">Street Address</string>
+    <string name="account_suite">Suite / Apt</string>
+    <string name="account_city">City</string>
+    <string name="account_state">State</string>
+    <string name="account_phone">Phone</string>
+
+    <string name="change_pswd_title">CHANGE PASSWORD</string>
+    <string name="account_old_pswd">Old Password</string>
+    <string name="account_new_pswd">New Password</string>
+    <string name="account_new_pswd_confirm">New Password Confirmation</string>
+
+    <string-array name="state_array">
+        <item>--</item>
+        <item>US-Alabama</item>
+        <item>US-Alaska</item>
+        <item>US-American Samoa</item>
+        <item>US-Arkansas</item>
+        <item>US-Arizona</item>
+        <item>US-California</item>
+        <item>US-Colorado</item>
+        <item>US-Connecticut</item>
+        <item>US-Delaware</item>
+        <item>US-District of Columbia</item>
+        <item>US-Federated States of Micronesia</item>
+        <item>US-Florida</item>
+        <item>US-Georgia</item>
+        <item>US-Guam</item>
+        <item>US-Hawaii</item>
+        <item>US-Idaho</item>
+        <item>US-Illinois</item>
+        <item>US-Indiana</item>
+        <item>US-Iowa</item>
+        <item>US-Kansas</item>
+        <item>US-Kentucky</item>
+        <item>US-Louisiana</item>
+        <item>US-Maine</item>
+        <item>US-Maryland</item>
+        <item>US-Marshall Islands</item>
+        <item>US-Massachusetts</item>
+        <item>US-Michigan</item>
+        <item>US-Minnesota</item>
+        <item>US-Mississippi</item>
+        <item>US-Missouri</item>
+        <item>US-Montana</item>
+        <item>US-North Carolina</item>
+        <item>US-North Dakota</item>
+        <item>US-Nebraska</item>
+        <item>US-Nevada</item>
+        <item>US-New Hampshire</item>
+        <item>US-New Jersey</item>
+        <item>US-New Mexico</item>
+        <item>US-New York</item>
+        <item>US-Ohio</item>
+        <item>US-Oklahoma</item>
+        <item>US-Oregon</item>
+        <item>US-Pennsylvania</item>
+        <item>US-Puerto Rico</item>
+        <item>US-Rhode Island</item>
+        <item>US-South Carolina</item>
+        <item>US-South Dakota</item>
+        <item>US-Tennessee</item>
+        <item>US-Texas</item>
+        <item>US-Utah</item>
+        <item>US-Virginia</item>
+        <item>US-Virgin Islands</item>
+        <item>US-Vermont</item>
+        <item>US-Washington</item>
+        <item>US-West Virginia</item>
+        <item>US-Wisconsin</item>
+        <item>US-Wyoming</item>
+        <item>CA-Alberta</item>
+        <item>CA-British Columbia</item>
+        <item>CA-Manitoba</item>
+        <item>CA-New Brunswick</item>
+        <item>CA-Newfoundland and Labrador</item>
+        <item>CA-Northwest Territories</item>
+        <item>CA-Nova Scotia</item>
+        <item>CA-Nunavut</item>
+        <item>CA-Ontario</item>
+        <item>CA-Prince Edward Island</item>
+        <item>CA-PW</item>
+        <item>CA-Quebec</item>
+        <item>CA-Saskatchewan</item>
+        <item>CA-Yukon Territories</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item>--</item>
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string name="casty_introduction_text">You can use this button to connect with Chromecast</string>
+    <string name="app_dialog_connecting_txt">Connecting to Play Store…</string>
+    <string name="app_dialog_download_txt">requires you to download their app to watch their content.</string>
+    <string name="title_activity_on_demand">OnDemandActivity</string>
+    <string name="empty"> </string>
+    <string name="local_channel_title">HD Digital Antenna</string>
+    <string name="local_channel_desc">Are you tired of paying expensive cable and satellite bills every month? Now you can save thousand of dollars a year with a HD digital antenna. Watch all your favorite broascast network shows-for free!.</string>
+    <string name="premium_channel_title">Premium Channels</string>
+    <string name="premium_channel_desc">Sling TV lets you stream your favorite live shows and on-demand entertainment, without the long-term contracts and hidden fees. Get the channels you want, top features like video replay, and the freedom to cancel easily online- all for a simple low price for $20/month.</string>
+    <!--<string name="local_channel_url">http://selecttv.com/landing/free-antenna</string>-->
+    <string name="local_channel_url">http://selecttv.com/hd-antenna/</string>
+    <!-- <string name="premium_channel_url">http://www.anrdoezrs.net/click–7506458–12167665-1441920147000</string>-->
+    <string name="premium_channel_url">http://www.kqzyfj.com/click-7506458-12175633-1441920147000</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_rating">PG-13</string>
+    <string name="movie_runtime_string">Runtime: </string>
+    <string name="movie_runtime">114 Minutes</string>
+    <string name="movie_watchfree">Watch Now</string>
+    <string name="movie_rentnow">Rent Now</string>
+    <string name="movie_add_to_favorites">Add to Favorites</string>
+    <string name="movie_overview">Overview</string>
+    <string name="movie_cast">Cast</string>
+    <string name="movie_genre">Genre</string>
+    <string name="overview_sample_text">In the rapidly growing world of high stakes fantasy football, we follow 5 of the industry\'s top players as they grind it out for championships, bragging rights and more than one MILLION dollars in cash. But when a game that was once known for its geeks and friendly basement wagers becomes a multi-billion dollar industry, and fantasy becomes reality, who wins and who loses? This is Living the Fantasy.</string>
+    <string name="seasons_watchlatest_string">Watch Latest</string>
+
+    <string name="episodeormoviename">Episode Name</string>
+    <string name="episodedetails">Episode</string>
+    <string name="episodedesscription">description</string>
+
+
+    <string name="register_url">http://selecttv.com/?utm_source=Android&amp;utm_medium=register&amp;utm_campaign=MobileSignupA</string>
+
+    <string name="homeactivity_search_hint"><![CDATA[Search TV Shows, Movies & More]]></string>
+    <string name="appmanager_note_first_string">Note:</string>
+    <string name="appmanager_note_string">You Must Check the "Unknown Sources" box in Security or Application section of "Settings" Menu</string>
+    <string name="need_help_watch_this_video">Need Help? <u>Watch this Video</u></string>
+    <!--<string name="need_help_url">http://support.freecast.com/</string>-->
+    <string name="need_help_url">http://support.selecttv.com/Main/</string>
+    <!--<string name="need_help_url1">http://ec2-54-226-136-197.compute-1.amazonaws.com/selecttv/push_admin/urls.php</string>-->
+    <string name="need_help_url1">http://support.selecttv.com/Main/</string>
+
+    <!--movie details activity-->
+    <string name="rated"><u>Rated:</u></string>
+    <string name="runtime"><u>Runtime:</u></string>
+    <string name="genre"><u>Genre:</u></string>
+
+    <string name="type_key">type_key</string>
+    <string name="data_key">data_key</string>
+    <string name="position_key">position_key</string>
+    <string name="size_key">size_key</string>
+    <string name="isScrolling">isScrolling</string>
+
+    <string name="content_url">http://d62yj09qiua3x.cloudfront.net/static/ads/bs.webm</string>
+    <string name="ad_tag_url"><![CDATA[https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=]]></string>
+    <string name="no_internet_connection">No Internet connection.</string>
+    <string name="please_check_your_internet_connection_or_try_again">Please check your internet connection or try again.</string>
+    <string name="tap_to_retry">Tap to retry</string>
+    <string name="warning">Warning</string>
+    <string name="sure_exit">You\'re about to exit the app? Are you sure you want to exit?</string>
+    <string name="ok">Ok</string>
+    <string name="no">No</string>
+    <string name="content_unavailable">Content Unavailable</string>
+    <string name="close">Close</string>
+    <string name="yt_not_aval">YouTube Player is not available in the device</string>
+    <string name="subscription_expired">Subscription Expired</string>
+
+
+</resources>

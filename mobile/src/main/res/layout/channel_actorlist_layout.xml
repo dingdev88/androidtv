@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fragment_channel_items_layout"
+    android:orientation="horizontal">
+    <com.selecttvApplication.ui.views.DynamicImageView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:id="@+id/fragment_channel_items_imageThumbnail"
+        android:layout_width="54dp"
+        android:layout_height="54dp"/>
+    <TextView
+        android:id="@+id/fragment_channel_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingBottom="5dp"
+        android:text="All"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

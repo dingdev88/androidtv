@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:layout_width="115dp"
+            android:layout_height="42dp">
+
+            <com.selecttvapp.ui.views.DynamicImageView
+                android:id="@+id/imageBack"
+                android:layout_width="115dip"
+                android:layout_height="42dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/stub" />
+
+            <com.selecttvapp.ui.views.DynamicImageView
+                android:id="@+id/image"
+                android:layout_width="106dip"
+                android:layout_height="36dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/stub"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:paddingLeft="10dip"
+                android:paddingRight="3dip"
+                android:text="TextView"
+                android:textSize="17dip"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/epgtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:maxLines="1"
+                android:text="EPG Daten"
+                android:textColor="#b6b6b6"
+                android:textSize="12dip" />
+        </TableLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="300dp"
+                android:layout_height="560dp"
+                android:background="@color/black_trnasparent"
+                android:orientation="vertical"
+                tools:context=".ui.activities.MainActivity">
+
+    <TextView
+        android:id="@+id/ui_list_dialog_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="Kids"
+        android:textColor="@color/app_color_blue"
+        android:textSize="@dimen/font_extra_large_big"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ui_list_dialog_tittle"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/app_color_blue"/>
+
+        <ListView
+            android:id="@+id/ui_list_dialog_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:divider="@color/black_trnasparent_dark"
+            android:dividerHeight="1dp"/>
+    </LinearLayout>
+</RelativeLayout>

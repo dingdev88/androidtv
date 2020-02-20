@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fragment_ondemandlist_items_layout"
+    android:layout_marginBottom="2dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/fragment_ondemandlist_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:paddingStart="3dp"
+        android:paddingBottom="5dp"
+        android:text="All"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

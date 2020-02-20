@@ -1,0 +1,216 @@
+<resources>
+
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal" />
+
+    <style name="ProgressHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="CategorySpinner" parent="android:style/Widget.Holo.Spinner">
+        <item name="android:spinnerItemStyle">@style/MySpinnerItem</item>
+    </style>
+
+    <style name="MySpinnerItem" parent="android:Widget.Holo.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/MyTextAppearanceSpinnerItem</item>
+
+    </style>
+
+    <style name="MyTextAppearanceSpinnerItem" parent="android:TextAppearance.Holo.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="TransparentProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.CustomTranslucent" parent="android:style/Theme.Translucent">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/ani_in</item>
+        <item name="android:windowExitAnimation">@anim/ani_out</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeNew" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppBaseThemeOld" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBarOld</item>
+    </style>
+
+    <style name="AppThemeOld" parent="AppBaseThemeOld">
+        <item name="android:actionBarStyle">@style/MyActionBarOld</item>
+        <item name="android:actionMenuTextColor">@color/blue_text</item>
+    </style>
+
+    <style name="MyActionBarOld" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/white</item>
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/blue_text</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/top_gray_color</item>
+        <item name="colorPrimaryDark">@color/channels_list_light</item>
+        <item name="colorAccent">@color/text_gray_color</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/top_gray_color</item>
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:textColorPrimaryInverse">@color/app_color_blue</item>
+        <item name="actionMenuTextColor">@color/app_color_blue</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeStyle">@style/MyActionMode</item>
+        <item name="android:actionBarTabTextStyle">@style/MenuItemTextStyle</item>
+    </style>
+
+
+    <style name="MyActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <!--- changes background of the container  -->
+        <item name="background">@color/white</item>
+        <!--- changes the action mode background when using actionbar is splitted -->
+        <item name="backgroundSplit">@color/app_color_blue</item>
+        <!--- changes height of the actionmode container view -->
+        <!--- changes text style of the title, create your own, this is the default  -->
+        <item name="titleTextStyle">@style/TitleTextStyleActionMod</item>
+        <!--- changes text style of the subtitle, create your own, this is the default  -->
+        <item name="subtitleTextStyle">@style/TitleTextSubStyleActionMod</item>
+
+    </style>
+
+    <style name="TitleTextStyleActionMod" parent="@style/TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textColor">@color/app_color_blue</item>
+    </style>
+
+    <style name="TitleTextSubStyleActionMod" parent="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle">
+        <item name="android:textColor">@color/app_color_blue</item>
+    </style>
+
+    <style name="MenuItemTextStyle" parent="@android:style/Widget.ActionBar.TabText">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/app_color_blue</item>
+    </style>
+
+    <style name="MY.DIALOG" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="Spinner.Dialog" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="SpinnerAsEditText" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@color/login_text_bg</item>
+    </style>
+
+    <style name="AppBaseTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppBaseTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- custom dialog fragment style -->
+    <style name="Theme_DialogFragment" parent="@android:style/Theme.Black">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackground">@color/transparent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--<item name="android:layout_gravity">center</item>-->
+        <!--<item name="android:windowCloseOnTouchOutside">true</item>-->
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.CastVideosDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="castMiniControllerStyle">@style/CustomCastMiniController</item>
+        <item name="castIntroOverlayStyle">@style/CustomCastIntroOverlay</item>
+        <item name="castExpandedControllerStyle">@style/CustomCastExpandedController</item>
+        <item name="castExpandedControllerToolbarStyle">
+            @style/ThemeOverlay.AppCompat.Dark.ActionBar
+        </item>
+    </style>
+
+    <style name="CustomCastIntroOverlay" parent="CastIntroOverlay">
+        <item name="castButtonTextAppearance">@style/TextAppearance.CustomCastIntroOverlay.Button
+        </item>
+        <item name="castTitleTextAppearance">@style/TextAppearance.CustomCastIntroOverlay.Title
+        </item>
+    </style>
+
+    <style name="TextAppearance.CustomCastIntroOverlay.Button" parent="android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.CustomCastIntroOverlay.Title" parent="android:style/TextAppearance.Large">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CustomCastMiniController" parent="CastMiniController">
+        <item name="castShowImageThumbnail">true</item>
+        <item name="castTitleTextAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="castSubtitleTextAppearance">@style/TextAppearance.AppCompat.Caption</item>
+    </style>
+
+    <style name="CustomCastExpandedController" parent="CastExpandedController" />
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+</resources>

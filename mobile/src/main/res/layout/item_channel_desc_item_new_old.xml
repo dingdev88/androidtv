@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_grid"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:orientation="horizontal"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/view"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:text="Channel Name"
+            android:singleLine="true"
+            android:id="@+id/txtChannelName"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:text="Channel Name"
+            android:singleLine="true"
+            android:id="@+id/txtChannel_time"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:visibility="gone"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:orientation="horizontal"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0.5dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/login_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password Reset Email Sent"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="An email containing your password reset link has been sent to your verified email address."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:layout_marginTop="20dp"
+        android:text="RETURN TO LOGIN"
+        android:textSize="25sp"
+        android:padding="15sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/btnContinue" />
+
+
+
+
+</LinearLayout>

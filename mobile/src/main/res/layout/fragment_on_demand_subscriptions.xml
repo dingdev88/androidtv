@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/upperLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<com.astuetz.PagerSlidingTabStrip-->
+        <!--android:id="@+id/maintab"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="38dp"-->
+        <!--android:background="@color/top_gray_color" />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_grey_gradient"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/maintab"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="5dp"
+                app:stl_clickable="true"
+                app:stl_defaultTabBackground="?attr/selectableItemBackground"
+                app:stl_defaultTabTextAllCaps="false"
+                app:stl_defaultTabTextColor="@color/custom_tab"
+                app:stl_defaultTabTextHorizontalPadding="16dp"
+                app:stl_defaultTabTextMinWidth="0dp"
+                app:stl_defaultTabTextSize="13sp"
+                app:stl_distributeEvenly="false"
+                app:stl_dividerColor="@color/transparent"
+                app:stl_dividerThickness="1dp"
+                app:stl_drawDecorationAfterTab="false"
+                app:stl_indicatorAlwaysInCenter="false"
+                app:stl_indicatorColor="@color/white"
+                app:stl_indicatorCornerRadius="2dp"
+                app:stl_indicatorGravity="bottom"
+                app:stl_indicatorInFront="false"
+                app:stl_indicatorInterpolation="linear"
+                app:stl_indicatorThickness="4dp"
+                app:stl_indicatorWidth="auto"
+                app:stl_indicatorWithoutPadding="false"
+                app:stl_overlineColor="#4D000000"
+                app:stl_overlineThickness="0dp"
+                app:stl_titleOffset="24dp"
+                app:stl_underlineColor="@color/transparent"
+                app:stl_underlineThickness="1dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/slidersLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <com.selecttvapp.ui.views.NonSwipeableViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/demand_menu_listview"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/spinner_layout_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_basic_very_large_8dp"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/demand_spinner1"
+                style="@style/CategorySpinner"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:popupBackground="@color/channels_list_dark"
+                android:layout_weight="0.5" />
+
+            <Spinner
+                android:id="@+id/demand_spinner2"
+                style="@style/CategorySpinner"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="0.5"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/slider_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/carouselsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="No Data"
+        android:textColor="@color/text_light_grey"
+        android:visibility="gone" />
+
+
+</LinearLayout>

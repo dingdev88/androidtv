@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:paddingTop="2dp"
+    android:background="@color/top_gray_color"
+    android:minHeight="?attr/actionBarSize"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/selected_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-36dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="18sp"
+            android:text=""
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.4dp"
+            android:layout_marginRight="1dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/activity_homescreen_toolbar_search"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/admin_btn_selector"
+                android:focusable="true"
+                android:nextFocusLeft="@id/activity_homescreen_toolbar_myaccount"
+                android:nextFocusDown="@id/fragment_ondemandlist_items_layout1"
+                android:src="@drawable/ic_action_search"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/activity_homescreen_toolbar_fullview"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignBottom="@+id/activity_homescreen_chromecast_image"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="-40dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/icon_fullscreen_new"
+                android:visibility="gone" />
+            <!--android:layout_toLeftOf="@+id/media_route_button"-->
+          <!--  <android.support.v7.app.MediaRouteButton
+                android:id="@+id/activity_homescreen_chromecast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:visibility="visible" />
+
+            <com.selecttvapp.channels.MediaRouteButtonHoloDark
+                android:id="@+id/media_route_button"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/admin_btn_selector"
+                android:nextFocusRight="@id/activity_homescreen_toolbar_myaccount"
+                android:nextFocusDown="@id/fragment_ondemandlist_items_layout1"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/activity_homescreen_toolbar_appmanager"
+                android:visibility="visible" />
+-->
+            <ImageView
+                android:id="@+id/activity_homescreen_chromecast_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/activity_homescreen_toolbar_appmanager"
+                android:src="@drawable/icon_cast_new"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/activity_homescreen_toolbar_myaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toLeftOf="@+id/activity_homescreen_toolbar_search"
+                android:background="@drawable/admin_btn_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@id/activity_homescreen_toolbar_appmanager"
+                android:nextFocusRight="@id/activity_homescreen_toolbar_search"
+                android:nextFocusDown="@id/fragment_ondemandlist_items_layout1"
+                android:src="@drawable/my_account"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/activity_homescreen_toolbar_appmanager"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:background="@drawable/admin_btn_selector"
+                android:nextFocusRight="@id/activity_homescreen_toolbar_myaccount"
+                android:layout_toLeftOf="@+id/activity_homescreen_toolbar_myaccount"
+                android:src="@drawable/app_manager"
+                android:visibility="visible" />
+
+            <!-- <RelativeLayout
+                 android:id="@+id/activity_homescreen_toolbar_myaccount_rl"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:paddingLeft="4dp"
+                 android:paddingRight="4dp">
+
+                 <ImageView
+                     android:id="@+id/activity_homescreen_toolbar_myaccount"
+                     android:layout_width="28dp"
+                     android:layout_height="match_parent"
+                     android:layout_centerInParent="true"
+                     android:src="@drawable/my_account"
+                     android:visibility="visible" />
+             </RelativeLayout>-->
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</android.support.v7.widget.Toolbar>

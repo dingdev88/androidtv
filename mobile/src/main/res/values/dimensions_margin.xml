@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="margin_find_me_line">24dp</dimen>
+
+    <dimen name="margin_normal">5dp</dimen>
+    <dimen name="margin_normal_plus">6dp</dimen>
+    <dimen name="margin_basic">1dp</dimen>
+    <dimen name="margin_basic_double">2dp</dimen>
+    <dimen name="margin_st_btn_top_header_gry">2dp</dimen>
+    <dimen name="margin_basic_large">3dp</dimen>
+    <dimen name="margin_basic2x">3dp</dimen>
+    <dimen name="margin_basic_very_large">4dp</dimen>
+    <dimen name="margin_normal_double">10dp</dimen>
+    <dimen name="margin_normal_half">7dp</dimen>
+    <dimen name="margin_normal_large">8dp</dimen>
+    <dimen name="margin_normal_triple_half">13dp</dimen>
+    <dimen name="margin_normal_triple">15dp</dimen>
+    <dimen name="channel_margin_normal_triple">15dp</dimen>
+    <dimen name="margin_normal_triple_plus">16dp</dimen>
+    <dimen name="margin_extra_large">20dp</dimen>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">10dp</dimen>
+
+    <dimen name="margin_large_max1">30dp</dimen>
+
+    <dimen name="margin_max_x_large1">25dp</dimen>
+    <dimen name="margin_max_x_large2">30dp</dimen>
+    <dimen name="margin_max_x_large3">35dp</dimen>
+    <dimen name="margin_max_x_large4">40dp</dimen>
+    <dimen name="channel_margin_max_x_large4">40dp</dimen>
+    <dimen name="margin_max_x_large5">45dp</dimen>
+    <dimen name="margin_max_x_large6">50dp</dimen>
+    <dimen name="margin_max_x_large6more">55dp</dimen>
+    <dimen name="margin_max_x_large7more">70dp</dimen>
+    <dimen name="margin_max_x_large8more">80dp</dimen>
+
+    <dimen name="margin_max_x_large12">120dp</dimen>
+    <dimen name="margin_max_x_large130">130dp</dimen>
+    <dimen name="margin_max_x_large15">150dp</dimen>
+    <dimen name="channel_activity_vertical_margin">16dp</dimen>
+
+    <dimen name="horizontal_line_margin">-21dp</dimen>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_grid"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        >
+
+        <com.selecttvapp.ui.views.DynamicImageView
+            android:id="@+id/imageShowThumbnail"
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="10dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/txtChannelName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#333333" />
+</LinearLayout>

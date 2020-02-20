@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutNetworkDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/top_grid_gray_color"
+    android:orientation="vertical"
+    tools:context="com.selecttvapp.ui.fragments.NetworkDetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_port_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.selecttvapp.ui.views.DynamicImageView
+            android:id="@+id/network_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/labelShows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_grey_700"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Shows"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_land_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.selecttvapp.ui.views.DynamicImageView
+            android:id="@+id/land_network_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/land_labelShows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/md_grey_700"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Shows"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerSelectedNetworkListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/labelNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="No Data"
+            android:textColor="@color/text_light_grey"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

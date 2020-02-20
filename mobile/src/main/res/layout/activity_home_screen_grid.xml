@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/top_gray_color"
+    android:padding="8dp"
+    tools:context="com.selecttvapp.ui.activities.HomeScreenGrid">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/activity_homescreen_toolbar_app_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/top_logo" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_logo">
+            <!-- <android.support.v7.widget.RecyclerView
+                 android:layout_gravity="center"
+                 android:id="@+id/activity_homescreen_grid_recycler"
+                 android:layout_width="match_parent"
+               android:layout_centerInParent="true"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_height="match_parent" />-->
+            <include
+                android:id="@+id/home_grid_layout"
+                layout="@layout/grid_layout" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+

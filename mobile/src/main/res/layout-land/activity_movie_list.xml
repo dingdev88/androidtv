@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.MovieListActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bar"
+        android:id="@+id/frameTopBar">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnMenu"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/menuicon"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnSearch"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/searchicon" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTitle"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.selecttvapp.ui.views.DynamicImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imgThumbnail"
+                    android:layout_margin="15dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textMovieName"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textDescription"
+                        android:textSize="15dp"
+                        android:layout_margin="10dp" />
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/listMovies"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

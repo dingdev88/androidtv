@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.selecttvapp.ui.views.DynamicImageView
+        android:id="@+id/imageViewRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/btn_selector_white"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <com.selecttvapp.ui.views.GridViewItem
+        android:id="@+id/gridview_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+
+</LinearLayout>

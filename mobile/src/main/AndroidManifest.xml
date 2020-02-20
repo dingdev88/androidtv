@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.selecttvapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:name="com.selecttvapp.ui.helper.MyApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        tools:replace="android:allowBackup"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppBaseTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/providers"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <activity
+            android:name="com.selecttvapp.ui.activities.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- </activity> -->
+        <activity
+            android:name="com.selecttvapp.ui.activities.WebBrowserActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.selecttvapp.ui.activities.VideoTrailorActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_video_trailor"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomTranslucent" />
+        <activity
+            android:name="com.selecttvapp.ui.activities.LoginActivity"
+            android:label="@string/title_activity_promo"
+            android:screenOrientation="landscape" >
+
+        </activity>
+        <activity
+            android:name="com.selecttvapp.ui.activities.ForgetActivity"
+            android:label="@string/title_activity_promo"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.demo.network.ui.activities.MyPakcageReciver">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.selecttvapp.cast.CastOptionsProvider" />
+
+        <activity
+            android:name="com.selecttvapp.ui.activities.HomeScreenGrid"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.selecttvapp.episodeDetails.ShowDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="com.selecttvapp.ui.activities.HomeActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" >
+     <!--   <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+        </activity>
+        <!--android:configChanges="orientation|screenSize|screenLayout"-->
+        <activity
+            android:name="com.selecttvapp.ui.activities.LoadingActivity"
+           android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" >
+
+        </activity>
+       <!-- android:configChanges="orientation|screenSize"-->
+        <service android:name="com.selecttvapp.service.RadioServiceNew" />
+
+
+        <service android:name="com.selecttvapp.FIRInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.selecttvapp.FIRMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="1897d1d29335b0ba1ac89c97b7ba3bc005b2268a" />
+
+        <activity android:name="com.selecttvapp.ui.activities.WelcomeVideoActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name="com.selecttvapp.ui.activities.MovieDetailsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name="com.selecttvapp.ui.activities.SearchResultsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.selecttvapp.ui.activities.VideoViewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".cast.ExpandedControlsActivity"
+            android:theme="@style/Theme.CastVideosDark" />
+
+        <service
+            android:name=".channels.ClosingService"
+            android:stopWithTask="false" />
+        <activity android:name="com.selecttvapp.ui.activities.HomeSplash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" ></activity>
+        <activity android:name="com.selecttvapp.ui.WebView"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/txtLabel1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/admin_btn_selector"
+        android:nextFocusDown="@id/btnCancel1"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:padding="@dimen/padding_large"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/app_color_blue"
+        />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<TextView
+    android:id="@android:id/text1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:gravity="center_vertical"
+    android:background="@drawable/ripple_white_grary"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="@dimen/padding_large"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@color/app_color_blue"
+    />

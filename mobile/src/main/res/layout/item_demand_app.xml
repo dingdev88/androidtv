@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_grid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <com.selecttvapp.ui.views.DynamicImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageShowThumbnail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        android:text="Channel Name"
+        android:id="@+id/txtChannelName"
+        android:textColor="#1c86ee"
+        android:textSize="15dp"
+        android:gravity="center" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1">
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnApp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#ffffff"
+        android:text="Installed"
+        android:background="@drawable/bg_installed_app"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/channels_list_dark"
+    tools:context="com.selecttvapp.ui.fragments.OTAFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/activity_otacable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/layout_ota_prev_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/prev"
+                    android:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_ota_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/text_ota_connected_how"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center_horizontal"
+                                    android:text="Over the Air"
+                                    android:textColor="@color/white"
+                                    android:textSize="24sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_ota_antenna"
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:layout_margin="16dp"
+                                        android:background="@drawable/spinner_bg"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="75dp"
+                                            android:layout_height="75dp"
+                                            android:src="@drawable/wifi"
+                                            android:tint="@color/white" />
+
+                                        <TextView
+                                            android:id="@+id/text_ota_antenna"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="bottom"
+                                            android:layout_marginBottom="3dp"
+                                            android:gravity="center"
+                                            android:text="Local Channels"
+                                            android:textColor="@color/white"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/text_ota_antenna2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="bottom"
+                                            android:layout_marginBottom="3dp"
+                                            android:gravity="center"
+                                            android:text="Desktop,Laptop,Set-top-Box"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="25dp"
+                                        android:layout_height="1dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/white" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_marginRight="3dp"
+                                        android:gravity="center"
+                                        android:text="or"
+                                        android:textColor="@color/white"
+                                        android:textSize="26sp" />
+
+                                    <View
+                                        android:layout_width="25dp"
+                                        android:layout_height="1dp"
+                                        android:layout_gravity="center"
+                                        android:background="@color/white" />
+
+                                    <LinearLayout
+                                        android:id="@+id/layout_ota_cable"
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:layout_margin="16dp"
+                                        android:background="@drawable/spinner_bg"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="75dp"
+                                            android:layout_height="75dp"
+                                            android:layout_margin="5dp"
+                                            android:src="@drawable/tv_android"
+                                            android:tint="@color/white" />
+
+                                        <TextView
+                                            android:id="@+id/text_ota_cable"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="bottom"
+                                            android:layout_marginBottom="3dp"
+                                            android:gravity="center"
+                                            android:text="Premium Channels"
+                                            android:textColor="@color/white"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:id="@+id/text_ota_cable2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="bottom"
+                                            android:layout_marginBottom="3dp"
+                                            android:gravity="center"
+                                            android:text="Live TV Packages"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_youtube_cantent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone">
+
+                            <FrameLayout
+                                android:id="@+id/youtube_player_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="50dp"
+
+                                android:layout_marginEnd="80dp"
+                                android:layout_marginLeft="120dp"
+                                android:layout_marginRight="80dp"
+                                android:layout_marginStart="120dp"
+                                android:layout_marginTop="50dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_channel_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone">
+
+                            <include layout="@layout/ots_details" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

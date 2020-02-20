@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_grid"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.selecttvapp.ui.views.DynamicImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imageShowThumbnail" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extreme sportsTV"
+        android:id="@+id/textMovieName"
+        android:textColor="@color/app_color_blue"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="2"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+</LinearLayout>

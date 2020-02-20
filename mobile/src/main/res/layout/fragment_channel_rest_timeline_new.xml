@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerSwipingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearChannelTab"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/channels_list_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/browse_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_menu"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_menu"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="BROWSE ALL CHANNELS"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/channel_tab_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="CHANNEL VIEW"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/show_tab_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/channels_title_header_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="ON DEMAND"
+                android:textColor="@color/channels_unselecetd_texcolor"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headerSliderView"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#e3e3e3"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:id="@+id/overall_scroll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="visible">-->
+
+    <!--<com.arvig.ui.views.HorizontalSwipingView-->
+    <!--android:id="@+id/swipingView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_grey_800"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="36dp"
+                android:background="@color/channels_selecetd_bg"
+                android:id="@+id/linearChannelTab">
+                <TextView
+                    android:id="@+id/channel_tab_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:gravity="center_vertical"
+                    android:text="CHANNEL VIEW"/>
+
+            </LinearLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<ScrollView-->
+                <!--android:id="@+id/scrollView_channel_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fadeScrollbars="false"-->
+                <!--android:fillViewport="true">-->
+
+                <HorizontalScrollView
+                    android:id="@+id/channelsHorizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/fragment_channel_alllist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+                </HorizontalScrollView>
+
+                <!--</ScrollView>-->
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rightSliderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/channels_list_light"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.60"-->
+            <!--android:background="@color/channels_list_light">-->
+
+            <!--<com.arvig.ui.views.CustomScrollView-->
+            <!--android:id="@+id/horizontal_scroll"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fadeScrollbars="false"-->
+            <!--android:fillViewport="true">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/fragment_channel_program_list"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</RelativeLayout>-->
+
+
+            <!--</com.arvig.ui.views.CustomScrollView>-->
+
+            <!--<View-->
+            <!--android:id="@+id/ruler_line"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="65dp"-->
+            <!--android:layout_marginStart="65dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="vertical"-->
+            <!--android:visibility="visible" />-->
+
+            <!--</RelativeLayout>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/linear"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:visibility="visible">-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/channels_list_dark">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/fragment_channel_program_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:isScrollContainer="false"
+                            android:nestedScrollingEnabled="false"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <!--<com.arvig.ui.views.CustomScrollView-->
+                    <!--android:id="@+id/horizontal_scroll"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:fadeScrollbars="false"-->
+                    <!--android:fillViewport="true"-->
+                    <!--android:visibility="gone" />-->
+                    .
+
+                </RelativeLayout>
+
+
+                <!--</LinearLayout>-->
+
+                <View
+                    android:id="@+id/ruler_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginStart="65dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--</com.arvig.ui.views.HorizontalSwipingView>-->
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+    <FrameLayout
+        android:id="@+id/frameMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/channels_list_light"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/channel_show_alllist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>
+

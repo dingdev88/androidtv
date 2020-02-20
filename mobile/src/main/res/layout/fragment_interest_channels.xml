@@ -1,0 +1,197 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:padding="5dp"
+    tools:context=".ui.fragments.InterestGenreDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/header_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/interest_dialog_channel_text" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interest_dialog_desc"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/desc_textView" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_layout"
+                android:layout_below="@+id/header_layout"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.3">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/back_imageView"
+                            android:tint="@color/white"
+                            android:src="@drawable/prev"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/back_imageView">
+
+                            <FrameLayout
+                                android:id="@+id/frame1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/channel_main_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                            </FrameLayout>
+
+<FrameLayout
+    android:id="@+id/frame2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/channel_sub_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        />
+
+</FrameLayout>
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:layout_marginLeft="5dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/content_recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"
+                            android:id="@+id/content_progressBar" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:id="@+id/list_progressBar" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/previous_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="Previous"
+                        android:paddingLeft="36dp"
+                        android:paddingRight="36dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@color/top_gray_color"/>
+                    <Button
+                        android:id="@+id/next_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Next  "
+                        android:paddingLeft="36dp"
+                        android:paddingRight="36dp"
+                        android:minEms="8"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@color/top_gray_color"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/skip_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="@string/interest_dialog_skip_text"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

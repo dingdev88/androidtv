@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/channels_list_dark"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <com.selecttvapp.ui.views.CustomNestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/activity_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/channels_list_dark"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/bannerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/top_gray_color">
+
+                <com.selecttvapp.ui.views.DynamicImageView
+                    android:id="@+id/showImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/top_gray_color"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.astuetz.PagerSlidingTabStrip
+                    android:id="@+id/tabSeason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:background="@color/top_gray_color" />
+
+                <FrameLayout
+                    android:id="@+id/containerSeasonPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/top_gray_color"
+                    android:visibility="visible">
+
+                    <com.selecttvapp.ui.views.CustomViewPager
+                        android:id="@+id/seasonViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.selecttvapp.ui.views.CustomNestedScrollView>
+
+
+</LinearLayout>

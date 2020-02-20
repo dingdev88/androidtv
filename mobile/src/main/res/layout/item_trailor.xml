@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#ff000000">
+
+        <com.selecttvapp.ui.views.DynamicImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/imageShowThumbnail" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#33777777"
+            android:visibility="invisible"></FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MovieName"
+            android:id="@+id/textTitle"
+            android:textSize="20dp"
+            android:textColor="@color/app_color_blue"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

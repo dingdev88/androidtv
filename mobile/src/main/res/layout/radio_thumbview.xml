@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/linearTopParent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#99000000"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src = "@drawable/close_icon"
+            android:id = "@+id/imageClose"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            >
+            <com.selecttvapp.ui.views.DynamicImageView
+                android:id="@+id/imageThumbnail"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="Title"
+                android:id="@+id/txtChannelName"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:textColor="#ffffff"
+                android:id="@+id/btnRadioPlayStop"
+                android:background="@drawable/ripple_green"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:orientation="vertical"
+    tools:context="com.selecttvapp.channels.ScrollingTimelineFragment">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="52dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+          <include
+              android:id="@+id/rest_program"
+              layout="@layout/rest_program_layout"
+              android:visibility="gone"/>
+          <include
+              android:id="@+id/rest_stream"
+              layout="@layout/rest_stream_layout"
+              android:visibility="gone"/>
+          <TextView
+              android:id="@+id/txtLoading"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Loading.."
+              android:textColor="@color/white"
+              android:gravity="center"
+              android:visibility="visible" />
+      </LinearLayout>
+  </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/channel3" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/on_demand_2nd_landscape"
+        android:id="@+id/lineardemandsecond"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|bottom">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/btnDemandNext"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="#1c86ee"
+                    android:textColor="#ffffff"
+                    android:text="Continue"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>

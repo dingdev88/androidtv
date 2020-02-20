@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:background="#bebebe"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/imgchannelupdown"
+        android:src="@drawable/png_channel_up"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:id="@+id/linearShowTab"
+        android:background="#bebebe"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="SHOW VIEW"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:id="@+id/linearChannelTab"
+        android:background="@color/light_gray_background"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="CHANNEL VIEW"/>
+    </LinearLayout>
+    <ImageView
+        android:background="#bebebe"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/imgscrollprev"
+        android:src="@drawable/left_slide"/>
+    <ImageView
+        android:background="#bebebe"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/imgscrollnext"
+        android:src="@drawable/right_slide"/>
+
+
+</LinearLayout>

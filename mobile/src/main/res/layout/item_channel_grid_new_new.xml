@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_grid"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/md_grey_900"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/viewPlayMark"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/md_yellow_500"
+            android:visibility="gone" />
+
+        <com.selecttvapp.ui.views.DynamicImageView
+            android:id="@+id/imageShowThumbnail"
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/txtChannelName"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Channel Name"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutProgramListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutProgramListItem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/md_grey_900"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtChannelName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtChannel_time1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtChannelName1"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ProgressBar
+                        android:id="@+id/progressbar"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminate="true" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressbar1"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutProgramListItem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/md_grey_900"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtChannelName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtChannel_time2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtChannelName2"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressbar2"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutProgramListItem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/md_grey_900"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtChannelName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_grey_400"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtChannel_time3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtChannelName3"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressbar3"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

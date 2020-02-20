@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_normal">
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="80dp">
+
+            <com.selecttvapp.ui.views.DynamicImageView
+                android:id="@+id/imageBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
+        </FrameLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:paddingRight="3dip"
+                android:text="The Dirty Half Dozen"
+                android:textColor="@color/app_color_blue"
+                android:textSize="17dip"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textEpisode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="EPG Daten"
+                android:textColor="#ff777777"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/textAirDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Air Date : May 12, 2015"
+                android:textColor="#ff777777"
+                android:textSize="14dp"/>
+        </TableLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:text=">"
+            android:textColor="@color/app_color_blue"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

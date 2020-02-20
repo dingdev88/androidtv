@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="font_extra_small">9sp</dimen>
+    <dimen name="font_small">10sp</dimen>
+    <dimen name="font_default">12sp</dimen>
+    <dimen name="font_default_less">11sp</dimen>
+    <dimen name="font_normal_less">13sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_large_less">15sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_very_large_less">17sp</dimen>
+    <dimen name="font_very_large">18sp</dimen>
+    <dimen name="font_large_extra_less">19sp</dimen>
+    <dimen name="font_large_extra">20sp</dimen>
+    <dimen name="font_extra_large">22sp</dimen>
+    <dimen name="font_extra_large_extra">24sp</dimen>
+    <dimen name="font_extra_large_big">26sp</dimen>
+    <dimen name="font_very_extra_large">30sp</dimen>
+    <dimen name="font_max_large">32sp</dimen>
+    <dimen name="font_extra_max">40sp</dimen>
+
+
+    <dimen name="channel_discription_font_small">12sp</dimen>
+
+</resources>

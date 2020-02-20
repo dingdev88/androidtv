@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/green_text">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/green_text"/>
+            <corners android:radius="3dp"/>
+            <padding
+                android:left="@dimen/large_margin"
+                android:right="@dimen/large_margin"/>
+        </shape>
+    </item>
+</ripple>

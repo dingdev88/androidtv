@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <dimen name="padding_not">0dp</dimen>
+    <dimen name="padding_normal">5dp</dimen>
+    <dimen name="padding_basic">1dp</dimen>
+    <dimen name="padding_basic_2dp">2dp</dimen>
+    <dimen name="padding_basic_large">3dp</dimen>
+    <dimen name="padding_basic_very_large">4dp</dimen>
+    <dimen name="padding_basic_very_large_8dp">8dp</dimen>
+    <dimen name="padding_audio_list_cell_btn_price_padding">12dp</dimen>
+    <dimen name="padding_large">10dp</dimen>
+    <dimen name="padding_large_plus">12dp</dimen>
+    <dimen name="padding_large_plus_little">14dp</dimen>
+    <dimen name="padding_large_half">16dp</dimen>
+    <dimen name="padding_large_double">20dp</dimen>
+    <dimen name="padding_extra_large_double">25dp</dimen>
+    <dimen name="padding_extra_large_double_little">30dp</dimen>
+    <dimen name="channel_padding_extra_large_double_little">30dp</dimen>
+    <dimen name="padding_eextra_large_50">50dp</dimen>
+
+</resources>

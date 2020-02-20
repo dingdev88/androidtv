@@ -1,0 +1,63 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gery"
+    android:elevation="7dp"
+    android:fitsSystemWindows="true">
+
+    <!-- The main content view -->
+    <RelativeLayout
+        android:id="@+id/ui_main_activity_holder"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+        </include>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/adView"
+            android:layout_below="@id/app_bar"
+            android:background="@color/white"/>
+
+    </RelativeLayout>
+
+    <!-- The navigation drawer -->
+    <include
+        android:id="@+id/left_drawer"
+        layout="@layout/ui_left_menu_drawer"
+        android:layout_width="@dimen/slide_drwer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"/>
+
+    <ListView
+        android:id="@+id/right_drawer"
+        android:layout_width="@dimen/slide_drwer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_menu"
+        android:choiceMode="singleChoice"
+        android:divider="@color/white_transparent"
+        android:dividerHeight="1dp"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/channels_list_dark"
+    tools:context=".episodeDetails.ShowDetailsActivity">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_grey_gradient"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start|center"
+                    android:background="#00FFFFFF"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_back_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.ogaclejapan.smarttablayout.SmartTabLayout
+                        android:id="@+id/maintab1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        app:stl_clickable="true"
+                        app:stl_defaultTabBackground="?attr/selectableItemBackground"
+                        app:stl_defaultTabTextAllCaps="false"
+                        app:stl_defaultTabTextColor="@color/custom_tab"
+                        app:stl_defaultTabTextHorizontalPadding="16dp"
+                        app:stl_defaultTabTextMinWidth="0dp"
+                        app:stl_defaultTabTextSize="13sp"
+                        app:stl_distributeEvenly="false"
+                        app:stl_dividerColor="@color/transparent"
+                        app:stl_dividerThickness="1dp"
+                        app:stl_drawDecorationAfterTab="false"
+                        app:stl_indicatorAlwaysInCenter="false"
+                        app:stl_indicatorColor="@color/white"
+                        app:stl_indicatorCornerRadius="2dp"
+                        app:stl_indicatorGravity="bottom"
+                        app:stl_indicatorInFront="false"
+                        app:stl_indicatorInterpolation="linear"
+                        app:stl_indicatorThickness="4dp"
+                        app:stl_indicatorWidth="auto"
+                        app:stl_indicatorWithoutPadding="false"
+                        app:stl_overlineColor="#4D000000"
+                        app:stl_overlineThickness="0dp"
+                        app:stl_titleOffset="24dp"
+                        app:stl_underlineColor="@color/transparent"
+                        app:stl_underlineThickness="1dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/favoriteIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/heart" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/bannerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <com.selecttvapp.ui.views.DynamicImageView
+                    android:id="@+id/showImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <com.selecttvapp.ui.views.NonSwipeableViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

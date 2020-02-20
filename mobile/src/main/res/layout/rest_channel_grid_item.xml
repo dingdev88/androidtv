@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="53dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_grid1"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusUp="@id/imgSTAR"
+        android:layout_width="match_parent"
+        android:background="@drawable/admin_btn_selector"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+
+        >
+        <!--android:background="@color/channel1"-->
+        <com.selecttvapp.ui.views.DynamicImageView
+
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="6dp"
+            android:padding="5dp"
+            android:id="@+id/imageShowThumbnail"
+
+            />
+
+        <TextView
+            android:id="@+id/txtChannelName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:fontFamily="@font/gbold"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:shadowColor="#000000"
+            android:shadowDx="1.8"
+            android:shadowDy="1.6"
+            android:shadowRadius="2.0"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#333333"/>
+</LinearLayout>

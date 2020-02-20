@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerSwipingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearChannelTab"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/channels_list_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/browse_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_menu"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_menu"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="BROWSE ALL CHANNELS"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/channel_tab_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="LIVE"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/show_tab_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/channels_title_header_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="ON DEMAND"
+                android:textColor="@color/text_yellow"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtStream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/md_yellow_900"
+                        android:padding="5dp"
+                        android:text="Stream"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtLive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#ee4242"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Live"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtVideoTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:inputType="textCapWords|textNoSuggestions"
+                        android:maxLines="1"
+                        android:text="- Title"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imgSTAR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:nextFocusRight="@id/fullScreenIcon"
+                        android:nextFocusUp="@id/fragment_ondemandlist_items_layout1"
+                        android:nextFocusDown="@id/item_grid1"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:background="@drawable/admin_btn_selector"
+                        android:src="@drawable/star"
+                        android:visibility="gone" />
+                    <ImageView
+                        android:id="@+id/fullScreenIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="1dp"
+                        android:nextFocusRight="@id/imgVOLUME"
+                        android:nextFocusLeft="@id/imgSTAR"
+                        android:nextFocusUp="@id/fragment_ondemandlist_items_layout1"
+                        android:nextFocusDown="@id/item_grid1"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:background="@drawable/admin_btn_selector"
+                        android:src="@drawable/fullscreen_icon"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutPlayOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgPAUSE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/pause"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/btnLive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:drawableRight="@drawable/play"
+                        android:gravity="center_vertical"
+                        android:text="LIVE"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imgVOLUME"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:nextFocusLeft="@id/fullScreenIcon"
+                        android:nextFocusUp="@id/fragment_ondemandlist_items_layout1"
+                        android:nextFocusDown="@id/item_grid1"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/admin_btn_selector"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/volume"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headerSliderView"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#e3e3e3"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.selecttvapp.ui.views.CustomNestedScrollView
+        android:id="@+id/overall_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:textSize="@dimen/_70ssp"
+        android:visibility="visible">
+
+        <com.selecttvapp.channels.HorizontalchannelSwipingView
+
+            android:id="@+id/swipingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginRight="150dp"
+                android:background="@color/channel1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/channel3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ScrollView
+                        android:id="@+id/scrollView_channel_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadeScrollbars="false"
+                        android:fillViewport="true">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/fragment_channel_alllist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/channel1" />
+
+                    </ScrollView>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rightSliderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/channel2"
+                android:clickable="true"
+                android:textSize="@dimen/_70ssp"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#333333" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/_70ssp">
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/fragment_channel_program_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_70ssp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                            <com.selecttvapp.ui.views.CustomScrollView
+                                android:id="@+id/horizontal_scroll"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fadeScrollbars="false"
+                                android:fillViewport="true"
+                                android:visibility="gone" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/ruler_line"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginStart="65dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </com.selecttvapp.channels.HorizontalchannelSwipingView>
+    </com.selecttvapp.ui.views.CustomNestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/showsView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/channels_list_light"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/channel_show_alllist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>
+

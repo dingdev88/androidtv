@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pager_item_ondemand_suggestions" type="id"/>
+    <item name="pager_item_tv_shows_screen2_pager" type="id"/>
+    <item name="pager_item_tv_shows_screen2_pager2" type="id"/>
+</resources>

@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.activities.SplashActivity">
+
+
+    <VideoView
+        android:id="@+id/videoViewSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/top_logo" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/autoScrollViewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:focusable="true" />
+
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/pageIndicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:padding="10dip" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnStartWatching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/admin_btn_selector_solid"
+            android:focusedByDefault="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="@dimen/padding_large"
+            android:paddingRight="20dp"
+            android:paddingBottom="@dimen/padding_large"
+            android:text="Start Watching"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_large"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+    <!--android:background="@drawable/ripple_splash"-->
+</FrameLayout>

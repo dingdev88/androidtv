@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    tools:context=".ui.activities.MainActivity"
+    android:background="@drawable/background3">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video On-Demand"
+        android:id="@+id/textCategory"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="@color/app_color_blue"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have requested to watch"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textCategory"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/app_color_blue"/>
+
+    <com.selecttvapp.ui.views.DynamicImageView
+        android:layout_width="240dip"
+        android:layout_height="160dip"
+        android:id="@+id/imageShowThumbnail"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/shortwall" />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:text="VideoTitle"
+        android:id="@+id/textVideoTitle"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageShowThumbnail"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="@color/app_color_blue"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textVideoTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Watch Now!"
+            android:id="@+id/butWatch"
+            android:layout_weight="1"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttonback"
+            android:textColor="#ff419eff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Cancel"
+            android:id="@+id/butCancel"
+            android:layout_weight="1"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonback"
+            android:textColor="#ff419eff" />
+    </LinearLayout>
+
+</RelativeLayout>

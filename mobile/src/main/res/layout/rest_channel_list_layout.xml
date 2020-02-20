@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_ondemandlist_items_layout1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:paddingLeft="20dp"
+    android:background="@drawable/admin_btn_selector"
+    android:nextFocusUp="@id/activity_homescreen_toolbar_search"
+    android:nextFocusDown="@id/imgSTAR"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_ondemandlist_items1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_line"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="8dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:text="All"
+            android:textColor="@android:color/black"
+            android:paddingStart="2dp" />
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#333333"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

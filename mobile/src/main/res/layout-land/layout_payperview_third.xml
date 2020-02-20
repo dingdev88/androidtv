@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearpayperviewthird"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#139e4c">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pay-Per-View App Downloader"
+                android:textSize="20sp"
+                android:textStyle = "bold"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#ffffff"
+            android:dividerHeight="3dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/listPayperViewApps">
+
+        </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/btnPayPerviewOK"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="#139e4c"
+                    android:textColor="#ffffff"
+                    android:text="Ok, I &apos;m done!"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    />
+
+
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/btnPayPerviewLater"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_payperview_dolater"
+                    android:textColor="#139e4c"
+                    android:text="Do this later"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

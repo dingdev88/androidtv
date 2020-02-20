@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lineardemandthird"
+    android:background="@color/channels_list_dark"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:id="@+id/app_categoryHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/channels_list_light"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/app_linearcategoryParent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/app_layoutDemandApps"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/btnDemandOK"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="#1c86ee"
+                android:textColor="#ffffff"
+                android:text="Ok, I &apos;m done!"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                />
+
+
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btnDemandLater"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@drawable/button_demand_dolater"
+                android:textColor="#1c86ee"
+                android:text="Do this later"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>

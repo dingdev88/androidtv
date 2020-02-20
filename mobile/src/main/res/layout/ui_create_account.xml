@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_login"
+                android:paddingBottom="@dimen/padding_large"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+    >
+
+    <ImageView
+        android:id="@+id/ui_register_img_top"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/top_logo"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ui_register_img_top"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ui_register_lab_login_into"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_large_extra"/>
+
+            <EditText
+                android:id="@+id/ui_register_etxt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:cursorVisible="true"
+                android:hint="User name"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_dark_gray"
+                android:textSize="@dimen/font_very_large"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/dark_gray"/>
+
+            <EditText
+                android:id="@+id/ui_register_etxt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:background="@color/transparent"
+                android:cursorVisible="true"
+                android:hint="Password"
+                android:inputType="textEmailAddress"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_dark_gray"
+                android:textSize="@dimen/font_very_large"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/dark_gray"/>
+
+            <EditText
+                android:id="@+id/ui_register_etxt_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:background="@color/transparent"
+                android:cursorVisible="true"
+                android:hint="Confirm Password"
+                android:inputType="textEmailAddress"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_dark_gray"
+                android:textSize="@dimen/font_very_large"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/dark_gray"/>
+
+            <EditText
+                android:id="@+id/ui_register_etxt_zip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:background="@color/transparent"
+                android:cursorVisible="true"
+                android:hint="Postal Code"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_dark_gray"
+                android:textSize="@dimen/font_very_large"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@color/dark_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/ui_register_btn_male"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:gravity="center_vertical"
+                        android:text="Male"
+                        android:textSize="@dimen/font_large_extra"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/ui_register_btn_female"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Female"
+                        android:textSize="@dimen/font_large_extra"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/ui_register_lab_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="Your age range"
+                    android:textSize="@dimen/font_large_extra"/>
+
+                <Spinner
+                    android:id="@+id/spinnerAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_background"
+                    android:padding="@dimen/padding_normal"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By clicking 'Create Account', you agree to the"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_default">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtTerm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Terms of Use"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_default">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="and "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_default">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_default">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=", and to receive member notifications."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_default">
+
+                </TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ui_register_btn_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:minWidth="160dp"
+                android:paddingLeft="@dimen/padding_large_double"
+                android:paddingRight="@dimen/padding_large_double"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textColor="@color/text_white_and_gery"
+                android:textSize="@dimen/font_extra_large"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

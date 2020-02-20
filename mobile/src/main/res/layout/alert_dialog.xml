@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="250dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/listContents1"
+            android:dividerHeight="1dp"
+            android:divider="#33000000"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingRight="10dp"
+            >
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Cancel"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusUp="@id/txtLabel1"
+                android:textColor="#000000"
+                android:id="@+id/btnCancel1"
+                android:background="@drawable/admin_btn_selector">
+
+            </Button>
+        </RelativeLayout>
+
+</LinearLayout>

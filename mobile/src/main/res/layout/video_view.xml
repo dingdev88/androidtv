@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.selecttvapp.ui.views.AspectFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/thumbnail_loading"
+    tools:ignore="WebViewLayout">
+
+    <com.selecttvapp.ui.views.AspectFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.youtube.player.YouTubeThumbnailView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:scaleType="fitXY" />
+    </com.selecttvapp.ui.views.AspectFrameLayout>
+
+
+    <!--<com.selecttvapp.ui.views.DynamicImageView-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@drawable/thumbnail_loading" />-->
+
+    <com.selecttvapp.WebView.AspectWebview
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:visibility="gone" />
+
+    <com.selecttvapp.ui.views.AspectFrameLayout
+        android:id="@+id/layoutPlayIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/playIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:src="@drawable/play_icon" />
+    </com.selecttvapp.ui.views.AspectFrameLayout>
+
+</com.selecttvapp.ui.views.AspectFrameLayout>

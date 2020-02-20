@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/icon_bg">
+
+            <TextView
+                android:id="@+id/watch_now_txt"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="-1dp"
+                android:background="@drawable/icon_bgtab"
+                android:gravity="center"
+                android:text="WATCH NOW"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:id="@+id/movie_payment_imageview"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/watch_now_txt"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                android:scaleType="centerInside" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/movie_payment_textview"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:background="@color/app_cost_bg"
+        android:drawablePadding="-5dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="4dp"
+        android:paddingTop="5dp"
+        android:text="$0.00"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+
+
+        android:visibility="visible" />
+</LinearLayout>

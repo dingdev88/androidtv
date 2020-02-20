@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_grid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+
+    android:orientation="vertical">
+
+    <com.selecttvapp.ui.views.DynamicImageView
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageShowThumbnail" />
+
+
+
+</LinearLayout>

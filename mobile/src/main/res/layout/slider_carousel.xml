@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/channels_list_light"
+    android:orientation="vertical"
+    android:paddingTop="2dp">
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:fillViewport="true">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/laySlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05">
+
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:id="@+id/content_pager_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="center">
+
+                        <com.selecttvapp.ui.views.AutoScrollViewPager
+                            android:id="@+id/slider_pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#2D2C2C"
+                            />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/slider_dots_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="start"
+                                android:orientation="horizontal" />
+                        </HorizontalScrollView>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/slide_prev"
+                                        android:layout_width="@dimen/dp_50"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:paddingLeft="@dimen/dp_20"
+                                        android:paddingRight="@dimen/dp_20"
+                                        android:paddingTop="@dimen/dp_5"
+                                        android:paddingBottom="@dimen/dp_5"
+                                        android:focusableInTouchMode="true"
+                                        android:focusable="true"
+                                        android:nextFocusUp="@id/activity_homescreen_toolbar_search"
+                                        android:nextFocusRight="@id/slide_next"
+                                        android:nextFocusDown="@id/btnWatchNow"
+                                        android:background="@drawable/btn_selector_white"
+                                        android:src="@drawable/ic_back_left"/>
+                                </LinearLayout>
+                                <ImageView
+                                    android:id="@+id/slide_next"
+                                    android:layout_width="@dimen/dp_50"
+                                    android:layout_height="@dimen/dp_50"
+                                    android:paddingLeft="@dimen/dp_20"
+                                    android:paddingRight="@dimen/dp_20"
+                                    android:paddingTop="@dimen/dp_5"
+                                    android:paddingBottom="@dimen/dp_5"
+                                    android:focusableInTouchMode="true"
+                                    android:focusable="true"
+                                    android:nextFocusUp="@id/activity_homescreen_toolbar_search"
+                                    android:nextFocusLeft="@id/slide_prev"
+                                    android:nextFocusRight="@id/imageView"
+                                    android:nextFocusDown="@id/btnWatchNow"
+                                    android:background="@drawable/btn_selector_white"
+                                    android:src="@drawable/ic_forward_right"/>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </FrameLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05">
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:id="@+id/dynamic_content_layout">
+
+
+              </LinearLayout>-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dynamic_content_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:visibility="gone" />
+
+
+            <!--    <com.astuetz.PagerSlidingTabStrip
+                    android:id="@+id/dynamic_content_list_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@color/top_gray_color" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/top_gray_color"
+                    android:visibility="gone">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pagerSubMenus"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp" />
+                </FrameLayout>-->
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/content_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!--    </ScrollView>-->
+
+</LinearLayout>

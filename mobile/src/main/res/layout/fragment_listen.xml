@@ -1,0 +1,341 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    tools:context="com.selecttvapp.ui.fragments.ListenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textRaioBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_back_white"
+            android:drawablePadding="@dimen/padding_large_half"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:padding="15dp"
+            android:background="@drawable/btn_selector_white"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragmentlisten_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragmentgridRadio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/linearRadioDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/radio_details_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginStart="5dp"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="vertical">
+
+                                        <com.selecttvapp.ui.views.DynamicImageView
+                                            android:id="@+id/banner_image"
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
+                                            android:background="@color/black"
+                                            android:scaleType="centerInside" />
+
+                                        <TextView
+                                            android:id="@+id/radio_play_button"
+                                            android:layout_width="150dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|bottom"
+                                            android:layout_marginTop="16dp"
+                                            android:background="#3AD531"
+                                            android:gravity="center"
+                                            android:maxHeight="48dp"
+                                            android:minWidth="250dp"
+                                            android:paddingBottom="8dp"
+                                            android:paddingEnd="16dp"
+                                            android:paddingLeft="16dp"
+                                            android:paddingRight="16dp"
+                                            android:paddingStart="16dp"
+                                            android:paddingTop="8dp"
+                                            android:text="Play"
+                                            android:textColor="@color/white" />
+
+                                        <TextView
+                                            android:id="@+id/radio_status"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|bottom"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="center"
+                                            android:maxHeight="48dp"
+                                            android:minWidth="250dp"
+                                            android:paddingEnd="4dp"
+                                            android:paddingLeft="4dp"
+                                            android:paddingRight="4dp"
+                                            android:paddingStart="4dp"
+                                            android:paddingTop="4dp"
+                                            android:text=""
+                                            android:textColor="@color/black" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.5"
+                                android:paddingLeft="5dp">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/radio_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="8dp"
+                                        android:text="@string/episodeormoviename"
+                                        android:textColor="@color/white"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:id="@+id/radio_description"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="8dp"
+                                        android:maxLines="6"
+                                        android:paddingBottom="5dp"
+                                        android:scrollbars="vertical"
+                                        android:text="@string/episodedesscription"
+                                        android:textColor="@color/text_lite_blue"
+                                        android:textSize="14sp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/slogan_layout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="16dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/Slogan_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="Slogan:"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/slogan"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="@string/movie_runtime"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/address_layout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="16dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/address_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="Address:"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/address"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="@string/movie_runtime"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/phone_layout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="16dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/phone_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="Phone:"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/phone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="@string/movie_runtime"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/email_layout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="16dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/email_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="Email:"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/email"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="@string/movie_runtime"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/web_layout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="16dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/web_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="Web,"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/bitrate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:text="@string/movie_runtime"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutRadioDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

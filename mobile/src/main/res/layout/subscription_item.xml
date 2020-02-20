@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e3e3e3"
+        android:minWidth="100dp">
+        <com.selecttvapp.ui.views.GridViewItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slingtv"
+            android:scaleType="fitXY"
+            android:id="@+id/subscription_image" />
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/tick_imageButton"
+            android:layout_margin="10dp"
+            android:layout_alignBottom="@+id/subscription_image"
+            android:layout_alignRight="@+id/subscription_image"
+            android:src="@drawable/tick_sub"
+
+            />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/progressBar" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

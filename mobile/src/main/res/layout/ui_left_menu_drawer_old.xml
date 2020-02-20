@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu">
+
+    <RelativeLayout
+        android:id="@+id/ui_left_menu_rl_top_header"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/top_gray_color"
+        android:gravity="center"
+        android:padding="@dimen/padding_large">
+
+        <ImageView
+            android:id="@+id/ui_left_menu_img_user"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_top" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ui_left_menu_rl_options_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ui_left_menu_rl_top_header"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ui_left_menu_rl_options"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ui_left_menu_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_home"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="Home"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_channels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_channel"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="Channels"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_on_demand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_on_demand"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="On Demand"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_kids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_kids"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="Kids"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_pay_per_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_pay_per_view"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="Pay Per View"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_my_subscriptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_my_subscription"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="My Subscriptions"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_otacable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_over_the_air"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="Over the Air"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_radiostation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_radio_station"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="Radio Stations"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_game"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="Game"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="More"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_app_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_app_manager"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="App Manager"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_my_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_my_interests"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="My Interests"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+            <TextView
+                android:id="@+id/ui_left_menu_my_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_my_account"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="My Account"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_transparent" />
+
+
+            <TextView
+                android:id="@+id/ui_left_menu_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_logout"
+                android:drawablePadding="@dimen/padding_large_half"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="Logout"
+                android:textColor="@color/white_transparent_little"
+                android:textSize="@dimen/font_large" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

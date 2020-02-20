@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/upperLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_grey_gradient"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ogaclejapan.smarttablayout.SmartTabLayout
+                    android:id="@+id/smartTabLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingBottom="5dp"
+                    app:stl_clickable="true"
+                    app:stl_defaultTabBackground="?attr/selectableItemBackground"
+                    app:stl_defaultTabTextAllCaps="false"
+                    app:stl_defaultTabTextColor="@color/custom_tab"
+                    app:stl_defaultTabTextHorizontalPadding="16dp"
+                    app:stl_defaultTabTextMinWidth="0dp"
+                    app:stl_defaultTabTextSize="13sp"
+                    app:stl_distributeEvenly="false"
+                    app:stl_dividerColor="@color/transparent"
+                    app:stl_dividerThickness="1dp"
+                    app:stl_drawDecorationAfterTab="false"
+                    app:stl_indicatorAlwaysInCenter="false"
+                    app:stl_indicatorColor="@color/white"
+                    app:stl_indicatorCornerRadius="2dp"
+                    app:stl_indicatorGravity="bottom"
+                    app:stl_indicatorInFront="false"
+                    app:stl_indicatorInterpolation="linear"
+                    app:stl_indicatorThickness="4dp"
+                    app:stl_indicatorWidth="auto"
+                    app:stl_indicatorWithoutPadding="false"
+                    app:stl_overlineColor="#4D000000"
+                    app:stl_overlineThickness="0dp"
+                    app:stl_titleOffset="24dp"
+                    app:stl_underlineColor="@color/transparent"
+                    app:stl_underlineThickness="1dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.selecttvapp.ui.views.NonSwipeableViewPager
+                    android:id="@+id/nonSwipeableViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layoutTools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/channels_list_light"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2.5dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/ondemand_spinner_bg"
+                            app:cardCornerRadius="3dp">
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/mainSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:backgroundTint="#fff"
+                                android:spinnerMode="dialog"
+                                android:visibility="gone"
+                                tools:targetApi="lollipop" />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2.5dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/ondemand_spinner_bg"
+                            app:cardCornerRadius="3dp">
+
+                            <Spinner
+                                android:id="@+id/subSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:backgroundTint="#fff"
+                                android:spinnerMode="dialog"
+                                android:visibility="gone"
+                                tools:targetApi="lollipop" />
+                        </android.support.v7.widget.CardView>
+
+                        <LinearLayout
+                            android:id="@+id/layoutPayMode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtAll"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="ALL"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/switchImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="3dp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/on" />
+
+                            <TextView
+                                android:id="@+id/txtFree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:singleLine="true"
+                                android:text="FREE"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/slidersLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:id="@+id/gridListLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="500dp"
+                        android:layout_height="273dp"
+                        android:layout_marginBottom="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/stvph2t"
+                        android:visibility="visible" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/gridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/networkLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+
+        <FrameLayout
+            android:id="@+id/carouselsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+
+        <TextView
+            android:id="@+id/labelNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="No Data"
+            android:textColor="@color/text_light_grey"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</layout>

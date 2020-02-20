@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/normal_margin"
+                                    android:background="@color/black"
+                                    android:clickable="true"
+                                    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_margin"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="50">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/ui_pb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/ui_main_item_img"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:clickable="false"
+                    android:padding="@dimen/normal_margin"
+                    android:scaleType="centerCrop"
+                    android:transitionName="appIcon"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/ui_main_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="djnfdjfn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_extra_large_big"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="50"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ui_main_item_install_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_green"
+                android:text="@string/text_install"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/ui_main_item_got_to_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_green"
+                android:text="@string/text_got_to_app"
+                android:textColor="@android:color/white"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
